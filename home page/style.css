@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.navbar-brand{
+    color: hsl(47, 97%, 55%);
+    font-weight: 600;
+}
+
+.nav-item a{
+    text-transform: uppercase;
+}
+
+.navbar-brand span{
+    color: #000;
+}
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption{
+    bottom: 38%;
+    z-index: 2;
+}
+
+.carousel-caption h5{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 45px;
+}
+
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    padding-bottom: 20px;
+    line-height: 1.7;
+}
+
+.carousel-inner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.red{
+    background-color: red;
+}
+
+.w-100{
+    height: 100vh;
+}
+
+#about img{
+    max-width: 100%;
+    height: 380px;
+}
+
+#team img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+.container-fluid h1, .heading{
+    font-size: 25px;
+}
+
+.container-fluid form button{
+    width: 100%;
+}
+
+.port-box{
+    box-shadow: 1px 1px 23px 1px #a6a9a9;
+}
+
+.port-box img{
+    width: 100%;
+    height: 70vh;
+}
+
+.icons svg{
+    margin: 0 10px;
+}
+  
+
+/* *** responsive *** */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #about img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 767px){
+
+    .carousel-caption h5{
+        font-size: 30px;
+    }
+
+    .carousel-caption p{
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    #about img{
+        width: 100%;
+        height: auto;
+    }
+}
